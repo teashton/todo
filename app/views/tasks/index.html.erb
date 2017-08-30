@@ -3,4 +3,5 @@
 <% @tasks.each do |task| %>
   <h2><%= task.title %></h2>
   <%= link_to 'Explore Item', task_path(task) %>
+  <%= link_to 'Edit page', edit_task_path(task) %>
 <% end %>
