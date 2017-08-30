@@ -36,4 +36,9 @@ end
     params.require(:task).permit(:title, :body)
   end
 
+  def destroy
+    Task.find(params[:id]).destroy
+    redirect_to tasks_path
+  end
+
 end
