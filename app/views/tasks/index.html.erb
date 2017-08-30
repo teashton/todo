@@ -1,0 +1,6 @@
+<h1>Things To Do!</h1>
+<%= link_to 'ADD New Task', new_task_path %>
+<% @tasks.each do |task| %>
+  <h2><%= task.title %></h2>
+  <%= link_to 'Explore Item', task_path(task) %>
+<% end %>
